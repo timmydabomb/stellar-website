@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071d35">
+  <title>Inquiry Inbox — Stellar Technical Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <header class="admin-header"><a class="admin-brand" href="/">STELLAR <span>TECHNICAL SERVICES</span></a><a class="back-link" href="/">← Back to website</a></header>
+  <main class="admin-main">
+    <section class="login-panel" id="login-panel" hidden>
+      <p class="eyebrow">PRIVATE INBOX</p>
+      <h1>Inquiry inbox</h1>
+      <p class="intro">Sign in to review messages submitted through the Stellar website.</p>
+      <form id="login-form">
+        <label for="admin-password">Admin password</label>
+        <input id="admin-password" name="password" type="password" autocomplete="current-password" required>
+        <button type="submit">Sign in <span>↗</span></button>
+        <p class="feedback" id="login-feedback" aria-live="polite"></p>
+      </form>
+    </section>
+    <section class="inbox-panel" id="inbox-panel" hidden>
+      <div class="inbox-heading"><div><p class="eyebrow">PRIVATE INBOX</p><h1>Website inquiries</h1><p class="intro">A private list of messages submitted through your website.</p></div><button class="logout-button" id="logout-button" type="button">Sign out</button></div>
+      <div class="inbox-status" id="inbox-status" aria-live="polite"></div>
+      <div class="inquiry-list" id="inquiry-list"></div>
+    </section>
+  </main>
+  <footer class="admin-footer">Stellar Technical Services <span>·</span> Private inquiry inbox</footer>
+</body>
+</html>
